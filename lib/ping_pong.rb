@@ -1,6 +1,6 @@
-# puts "Enter a number:"
-# num = gets.chomp.to_i
-#
+puts "Enter a number:"
+num = gets.chomp.to_i
+
 
 def count(num)
   numbers = (1..num)
@@ -18,6 +18,8 @@ def ping(new_array)
   new_array.each do |x|
     if x % 3 == 0
       x = "ping"
+    elsif x % 5 == 0
+      x = "pong"
     end
     pinged_array.push(x)
   end
