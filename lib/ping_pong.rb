@@ -12,5 +12,15 @@ def count(num)
   new_array
 end
 
-def ping(x)
+def ping(new_array)
+  pinged_array = []
+  new_array.each do |x|
+    if x % 3 == 0
+      x = "ping"
+    else
+      x = x
+    end
+    pinged_array.push(x)
+  end
+  pinged_array
 end
