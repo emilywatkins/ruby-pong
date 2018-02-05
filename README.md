@@ -6,35 +6,29 @@
 
 ## Description
 
-This simple application takes a number from the user, creates an array beginning with 1 and ending with the user's input number. It then numbers that meet certain criteria with either ping or pong and, finally, returns a list of numbers where ping and pong have been inserted. 
+This simple application takes a number from the user, creates an array beginning with 1 and ending with the user's input number. It then replaces numbers that meet certain criteria with either ping or pong and, finally, returns a list of numbers where ping and pong have been inserted.
 
 ## Specs
 
-(1) This program will create an array beginning with 1 and ending with the user's input number.
-* Input example: 7
-* Output example: "1", "2", "3", "4", "5", "6", "7"
+1. Collect input from user. The terminal will be able to output the number.
+  Input: 60
+  Output: 60
 
-(2) This program will check the array for numbers divisible by three(numThree). All numThrees will be replaced with "I'm sorry, Dave. I can't do that." The revised array (revArray) will then progress to the next step.
-* Input example: 7
-* Output example: "1", "2", "I'm sorry, Dave. I can't do that.", "4", "5", "I'm sorry, Dave, I can't do that", "7"
+2. Program will count from 1 to the user input number and output an array of those numbers.
+  Input: 4
+  Output: [1, 2, 3, 4]
 
-(3) This program will check revArray for numbers containing a 1. All 1's will be replaced with boop and the revArray will proceed to the next step.
-* Input example: 13
-* Output example: "boop", "2", "I'm sorry, Dave. I can't do that.", "4", "5", "I'm sorry, Dave, I can't do that", "7", "8", "I'm sorry, Dave. I can't do that.", "boop", "boop", "boop", "boop"
+3. Program will replace numbers divisible by 3 with "ping"
+  Input: 4
+  Output: [1, 2, "ping", 4]
 
-(4) This program will check revArray for numbers containing a 0. All 0's will be replaced with beep and the revArray will proceed to the final step.
-* Input example: 21
-* Output example: "boop", "2", "I'm sorry, Dave. I can't do that.", "4", "5", "I'm sorry, Dave, I can't do that", "7", "8", "I'm sorry, Dave. I can't do that.", "boop", "boop", "I'm sorry, Dave. I can't do that.", "boop", "boop", "I'm sorry, Dave. I can't do that.", "boop", "boop", "I'm sorry, Dave. I can't do that.", "boop", "beep", "I'm sorry, Dave. I can't do that."
-
-(5) Finally, this program will display the final array to the user.
+4. Program will replace numbers divisible by 5 with "pong"
+  Input: 5
+  Output: [1, 2, "ping", 4, "pong"]
 
 ## Built With
 
-* HTML
-* CSS
-* Bootstrap
-* Javascript
-* jQuery
+* Ruby
 
 <!--
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
